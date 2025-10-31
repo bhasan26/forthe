@@ -29,8 +29,8 @@ const About: React.FC = () => {
           </div>
           <div className="order-1 md:order-2">
             <img 
-              src="https://i.imgur.com/Qk7sHfq.jpeg" 
-              alt="A glass of beer on a custom epoxy river bar top" 
+              src="https://i.imgur.com/p8CoT2R.jpeg" 
+              alt="The cozy, well-lit interior of the brewery taproom" 
               className="rounded-lg shadow-2xl shadow-black"
             />
           </div>

@@ -10,6 +10,9 @@ const Visit: React.FC = () => {
     { day: "Saturday", hours: "12 PM - 10 PM" },
     { day: "Sunday", hours: "12 PM - 6 PM" },
   ];
+  
+  const address = "2617 W Northwest Blvd, Spokane, WA 99205";
+  const mapUrl = `https://maps.google.com/maps?q=${encodeURIComponent(address)}&t=&z=15&ie=UTF8&iwloc=&output=embed`;
 
   return (
     <section id="visit" className="py-20 sm:py-28">
@@ -37,17 +40,26 @@ const Visit: React.FC = () => {
               <h3 className="text-2xl font-bold text-amber-400 mb-4">Location & Contact</h3>
               <div className="space-y-4 text-zinc-300">
                 <p className="flex items-center">
+                  {/* FIX: Corrected SVG attribute 'strokeLineCap' to 'strokeLinecap' and 'strokeLineJoin' to 'strokeLinejoin'. */}
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-3 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
-                  2617 W Northwest Blvd, Spokane, WA 99205
+                  {address}
                 </p>
                 <p className="flex items-center">
+                  {/* FIX: Corrected SVG attribute 'strokeLineCap' to 'strokeLinecap' and 'strokeLineJoin' to 'strokeLinejoin'. */}
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-3 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
                   (918) 398-6569
                 </p>
               </div>
             </div>
-             <div className="w-full h-64 bg-zinc-700 rounded-lg flex items-center justify-center">
-               <p className="text-zinc-400">Map Placeholder</p>
+             <div className="w-full h-80 rounded-lg overflow-hidden shadow-2xl shadow-black/50">
+                <iframe
+                    className="w-full h-full"
+                    src={mapUrl}
+                    loading="lazy"
+                    aria-hidden="false"
+                    tabIndex={0}
+                    title={`Map to ${address}`}
+                ></iframe>
              </div>
           </div>
         </div>

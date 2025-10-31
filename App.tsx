@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -7,8 +6,9 @@ import BeerMenu from './components/BeerMenu';
 import FoodMenu from './components/FoodMenu';
 import Events from './components/Events';
 import Visit from './components/Visit';
-import Gallery from './components/Gallery';
+import InstagramFeed from './components/Gallery';
 import Footer from './components/Footer';
+import PizzaMaker from './components/PizzaMaker';
 
 const App: React.FC = () => {
   return (
@@ -19,9 +19,10 @@ const App: React.FC = () => {
         <About />
         <BeerMenu />
         <FoodMenu />
+        <PizzaMaker />
         <Events />
         <Visit />
-        <Gallery />
+        <InstagramFeed />
       </main>
       <Footer />
     </div>

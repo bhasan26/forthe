@@ -21,14 +21,14 @@ export const BEERS: Beer[] = [
     style: "IMPERIAL STOUT",
     abv: "12%",
     description: "Conditioned on house toasted coconut, and raw coconut. Big notes of fudge, and coconut.",
-    imageUrl: "https://picsum.photos/seed/stout2/600/800",
+    imageUrl: "https://i.imgur.com/Slb54rK.jpeg",
   },
   {
     name: "JUDGEMENT DAY: HAZELNUT",
     style: "IMPERIAL STOUT",
     abv: "12%",
     description: "Conditioned on house roasted hazelnuts. Big notes of nutella, fudge, and chocolate.",
-    imageUrl: "https://picsum.photos/seed/stout3/600/800",
+    imageUrl: "https://i.imgur.com/sL0a23r.jpeg",
   },
   {
     name: "DOUBLE BARREL AGED JUDGEMENT DAY",
@@ -42,7 +42,7 @@ export const BEERS: Beer[] = [
     style: "IMPERIAL STOUT",
     abv: "12%",
     description: "Conditioned on Madagascar vanilla beans. Big notes of marshmallow, fudge, and vanilla.",
-    imageUrl: "https://picsum.photos/seed/stout5/600/800",
+    imageUrl: "https://i.imgur.com/1nL7w41.jpeg",
   },
   {
     name: "SAINT STEVE",
@@ -56,7 +56,7 @@ export const BEERS: Beer[] = [
     style: "IMPERIAL STOUT",
     abv: "12%",
     description: "Our flagship imperial stout. Big notes of fudge, and dark chocolate.",
-    imageUrl: "https://picsum.photos/seed/stout6/600/800",
+    imageUrl: "https://i.imgur.com/5lG1s2y.jpeg",
   },
 ];
 
@@ -88,12 +88,12 @@ export const FOOD_ITEMS: FoodItem[] = [
 ];
 
 export const GALLERY_IMAGES: string[] = [
-  "https://i.imgur.com/r62sSMe.jpeg",
+  "https://i.imgur.com/p8CoT2R.jpeg",
   "https://i.imgur.com/1G6nSl2.jpeg",
   "https://i.imgur.com/Qk7sHfq.jpeg",
+  "https://i.imgur.com/GGR53v1.jpeg",
+  "https://i.imgur.com/r62sSMe.jpeg",
+  "https://i.imgur.com/s6f4e6s.jpeg",
   "https://i.imgur.com/vH3s1sH.jpeg",
-  "https://i.imgur.com/gYd5v8Q.jpeg",
-  "https://i.imgur.com/sYmGZ6I.jpeg",
-  "https://i.imgur.com/hOa48pZ.jpeg",
   "https://i.imgur.com/6cE9z2s.png",
 ];

@@ -4,7 +4,7 @@ const Hero: React.FC = () => {
   return (
     <section id="hero" className="relative h-screen flex items-center justify-center text-center text-white">
       <div className="absolute inset-0 bg-black opacity-60 z-10"></div>
-      <img src="https://i.imgur.com/r62sSMe.jpeg" alt="Three glasses of craft beer" className="absolute inset-0 w-full h-full object-cover"/>
+      <img src="https://i.imgur.com/2jV9H3j.jpeg" alt="The sunny patio and wooden entrance sign of the brewery" className="absolute inset-0 w-full h-full object-cover"/>
       <div className="relative z-20 px-4">
         <h1 className="font-display text-6xl md:text-8xl lg:text-9xl text-amber-400 drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
           For The Love Of God Brewing

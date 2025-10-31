@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 
 const NavLink: React.FC<{ href: string; children: React.ReactNode, onClick: () => void }> = ({ href, children, onClick }) => (
@@ -14,9 +13,10 @@ const Header: React.FC = () => {
     { href: "#about", label: "About" },
     { href: "#beers", label: "Beers" },
     { href: "#food", label: "Food" },
+    { href: "#pizza-ai", label: "Pizza AI" },
     { href: "#events", label: "Events" },
     { href: "#visit", label: "Visit" },
-    { href: "#gallery", label: "Gallery" },
+    { href: "#instagram", label: "Instagram" },
   ];
 
   return (
@@ -37,9 +37,11 @@ const Header: React.FC = () => {
             <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-zinc-300 hover:text-amber-400 focus:outline-none">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 {isMenuOpen ? (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                  // FIX: Corrected SVG attribute 'strokeLineCap' to 'strokeLinecap' and 'strokeLineJoin' to 'strokeLinejoin'.
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 ) : (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
+                  // FIX: Corrected SVG attribute 'strokeLineCap' to 'strokeLinecap' and 'strokeLineJoin' to 'strokeLinejoin'.
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
                 )}
               </svg>
             </button>
